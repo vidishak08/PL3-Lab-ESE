@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h3>User Login</h3>
+    <form action="/signin" method="post">
+        {% csrf_token %}
+
+        <label for="">fullname</label>
+        <input type="text" name="fullname" id="fullname", placeholder="create a username(only letters and numbers)" Required>
+        <br><br>
+    
+        <label for="">class</label>
+        <input type="text" name="class1" id="class1", placeholder="Enter your class" Required>
+        <br><br>
+        <label for="">year</label>
+        <input type="number" name="year" id="class", placeholder="Enter your year" Required>
+        <br>
+        <br>
+        <label for="">Department</label>
+        <input type="text" name="department" id="department", placeholder="Enter your department" Required>
+        <br><br>
+        <br><br>
+        <label for="">Reason</label>
+        <input type="text" name="Reason" id="Reason", placeholder="Specify your reason" Required>
+        <br><br>
+        <br><br>
+        <button type="submit">Sign In</button>
+
+
+    </form>
+</body>
+</html>
